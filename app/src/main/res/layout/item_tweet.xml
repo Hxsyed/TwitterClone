@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:layout_marginBottom="10dp">
 
     <ImageView
         android:id="@+id/ivProfileImage"
@@ -17,7 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_toEndOf="@+id/ivProfileImage"
-        tools:text="hxsyed" />
+        tools:text="Hxsyed" />
 
     <TextView
         android:id="@+id/tvBody"
@@ -27,5 +29,19 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="2dp"
         android:layout_toEndOf="@+id/ivProfileImage"
-        tools:text="This is my Tweet" />
+        tools:text="Tweet it !!!!!" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="225dp"
+        android:layout_toEndOf="@+id/tvScreenName"
+        tools:text="Time" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
 </RelativeLayout>

@@ -40,6 +40,17 @@ public class TimelineActivity extends AppCompatActivity {
     SwipeRefreshLayout swipeContainer;
     EndlessRecyclerViewScrollListener scrollListener;
     ActionBar actionBar;
+
+
+//    @Nullable
+//    @Override
+//    public ActionBar getSupportActionBar() {
+//        getSupportActionBar().setDisplayShowHomeEnabled(true);
+//        getSupportActionBar().setLogo(R.drawable.twittericon);
+//        return super.getSupportActionBar();
+//    }
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +59,8 @@ public class TimelineActivity extends AppCompatActivity {
          client = TwitterApp.getRestClient(this);
          actionBar = getSupportActionBar();
          actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#1DA1F2")));
+         actionBar.setDisplayShowHomeEnabled(true);
+         actionBar.setLogo(R.drawable.twittericon);
 
          swipeContainer = findViewById(R.id.swipeContainer);
 
@@ -83,6 +96,7 @@ public class TimelineActivity extends AppCompatActivity {
 
         populateHomeTimeline();
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
